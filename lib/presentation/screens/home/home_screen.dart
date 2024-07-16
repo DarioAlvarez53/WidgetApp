@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:widget_app/config/menu/menu_items.dart';
+import 'package:widget_app/presentation/screens/buttons/buttons_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -52,7 +53,14 @@ class _CustomListTitle extends StatelessWidget {
       title: Text( menuItem.title ),
       subtitle: Text( menuItem.subTitle ),
       onTap: () {
-        //TODO: NAVEGAR A OTRA PANTALLA
+        // Navigator.of(context).push( //el push es que va a poner una pagian sobre de otra
+        //   MaterialPageRoute(
+        //     builder: (context) => const ButtonsScreen(),
+        //   ),
+        // );
+
+        //aqui llamamos al navigator
+        Navigator.pushNamed(context, menuItem.link);
       },
     );
   }
