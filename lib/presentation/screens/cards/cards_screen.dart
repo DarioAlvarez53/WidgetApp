@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:widget_app/config/theme/app_theme.dart';
 
 //Listado de tarjetas
 const cards =  <Map<String, dynamic>>[
