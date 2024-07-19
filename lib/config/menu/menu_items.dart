@@ -74,5 +74,10 @@ const appMenuItems = <MenuItems>[
     link: '/infinite-scroll', 
     icon: Icons.list_rounded
   ),
-  
+  MenuItems(
+    title: "Seleccionador de tema", 
+    subTitle: "Seleccionador del tema de la aplicacion", 
+    link: '/theme-changer', 
+    icon: Icons.color_lens_rounded
+  ),
 ];
