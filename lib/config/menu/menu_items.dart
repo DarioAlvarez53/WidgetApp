@@ -21,6 +21,12 @@ class MenuItems {
 //este es el listado de los items que va a tener el menu 
 const appMenuItems = <MenuItems>[
   MenuItems(
+    title: "Riverpod counter", 
+    subTitle: "Introduccion a Riverpod", 
+    link: '/counter', 
+    icon: Icons.numbers_rounded
+  ),
+  MenuItems(
     title: "Botones", 
     subTitle: "Vaios botones en Flutter", 
     link: '/buttons', 
@@ -67,5 +73,6 @@ const appMenuItems = <MenuItems>[
     subTitle: "Galeria de imagenes infinitas con refresh", 
     link: '/infinite-scroll', 
     icon: Icons.list_rounded
-  )
+  ),
+  
 ];
